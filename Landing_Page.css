@@ -1,0 +1,134 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f9f4; /* Light green background */
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background: #2e8b57; /* Sea green background */
+    color: #fff;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #d9f7be; /* Light green on hover */
+}
+
+/* Main Section Styling */
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* Hero Section Styling */
+.hero {
+    background: #3cb371; /* Medium sea green background */
+    color: #fff;
+    padding: 4rem 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero button {
+    background: #fff;
+    color: #3cb371;
+    border: none;
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.hero button:hover {
+    background: #d9f7be; /* Light green */
+    color: #fff;
+}
+
+/* Features Section Styling */
+.features {
+    padding: 2rem;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+.features h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #2e8b57;
+}
+
+.feature-item {
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    background-color: #e0f7fa; /* Light cyan background */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feature-img {
+    max-width: 50%; /* Decreased image size */
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.feature-item h3 {
+    margin: 0.9rem 0;
+    color: #2e8b57;
+    font-size: 1.5rem;
+}
+
+.feature-item p {
+    color: #666;
+    font-size: 1rem;
+}
+

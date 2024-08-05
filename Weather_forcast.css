@@ -1,0 +1,62 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f9f4; /* Light green background */
+    color: #333;
+    text-align: center;
+}
+
+/* Header Styling */
+header {
+    background: #2e8b57; /* Sea green background */
+    color: #fff;
+    padding: 1rem;
+}
+
+/* Main Section Styling */
+main {
+    padding: 2rem;
+}
+
+/* Weather Section Styling */
+#weather {
+    margin-top: 2rem;
+}
+
+#weatherDisplay {
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+button {
+    background: #2e8b57; /* Sea green background */
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+button:hover {
+    background: #1e6a41; /* Darker green */
+}
+
+/* Input Field */
+input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}

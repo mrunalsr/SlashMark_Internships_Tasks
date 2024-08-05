@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="Task2_PortFolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi, I'm Mrunali Raksale, a passionate developer.</p>
+        </section>
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="project-gallery">
+                <div class="project-item" onclick="openModal('book-store-management.jpg')">
+                    <h3>Book Store Management System</h3>
+                    <p>A comprehensive system for managing book inventory, sales, and customer data.</p>
+                </div>
+                <div class="project-item" onclick="openModal('file-packer-unpacker.jpg')">
+                    <h3>File Packer/Unpacker</h3>
+                    <p>A tool for compressing and decompressing files to save space and manage large datasets.</p>
+                </div>
+            </div>
+        </section>
+        <section id="experience" class="experience">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Full Stack Developer Intern</h3>
+                <p><strong>Company:</strong> Slashmark<br>
+                <strong>Duration:</strong> 3 Months<br>
+                <strong>Description:</strong> Worked on developing both front-end and back-end components, collaborating with the team to build and maintain web applications.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Machine Learning Intern</h3>
+                <p><strong>Company:</strong> Slashmark<br>
+                <strong>Duration:</strong> 1 Month<br>
+                <strong>Description:</strong> Assisted in creating and fine-tuning machine learning models, analyzing data, and implementing algorithms to improve system performance.</p>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:youremail@example.com">mrunalraksale2003@gmail.com</a></p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/mrunali-raksale-6288b2238?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/mrunalsr" class="social-icon"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Thank You.</p>
+    </footer>
+
+    <!-- Modal for displaying images -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img id="modal-img" class="modal-content" alt="Project Image">
+    </div>
+
+    <script>
+        function openModal(imgSrc) {
+            document.getElementById('modal').style.display = 'flex';
+            document.getElementById('modal-img').src = imgSrc;
+        }
+
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
